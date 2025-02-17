@@ -43,7 +43,7 @@ MAIN:
 	LDI		R16, 100
 	OUT		TCNT0, R16
 	INC		COUNTER
-	CPI		COUNTER, 100 //Cuando el counter llegre a 100ms
+	CPI		COUNTER, 10 //Cuando el counter llegue a 100ms
 	BRNE	MAIN
 	CLR		COUNTER
 	INC		R18
@@ -57,6 +57,3 @@ TMR0:
 	LDI		R16, 100
 	OUT		TCNT0, R16
 	RET
-
-
-
